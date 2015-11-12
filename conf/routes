@@ -8,5 +8,11 @@ GET     /                           controllers.Application.index()
 POST    /person                     controllers.PersonCtrl.post
 GET     /person/:id                 controllers.PersonCtrl.get(id)
 
+POST    /employee                   controllers.EmployeeCtrl.post
+GET     /employee/:id               controllers.EmployeeCtrl.get(id)
+
+POST    /project                    controllers.ProjectCtrl.post
+GET     /project/:id                controllers.ProjectCtrl.get(id)
+
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.at(path="/public", file)
